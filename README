@@ -5,6 +5,14 @@ npm install @babel/core @babel/preset-env @babel/node
 
 git init
 
+// add .gitignore with content 
+//"node_modules"
+
+// add .babelrc with this content
+//{
+//   "presets": ["@babel/preset-env"]
+//}
+
 // to run the server
 npx babel-node src/server.js
      or
