@@ -4,3 +4,11 @@ npm install express
 npm install @babel/core @babel/preset-env @babel/node
 
 git init
+
+// to run the server
+npx babel-node src/server.js
+     or
+ npm start    
+
+// open in the browser 
+http://localhost:3000/hello
