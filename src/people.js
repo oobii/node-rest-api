@@ -1,17 +1,17 @@
-export let people = [
-
-{
-    name: "John",
+export const people = [
+  {
+    name: 'John',
     age: 35,
 
-},
-{
-    name: "Joe",
+  },
+  {
+    name: 'Joseph',
     age: 35,
 
-},{
-    name: "Joan",
+  },
+  {
+    name: 'Joan',
     age: 35,
 
-}
-]
+  },
+];

@@ -3,6 +3,14 @@ npm init -y
 npm install express
 npm install @babel/core @babel/preset-env @babel/node
 npm install body-parser
+npm install nodemon
+npm install eslint
+
+// initializing ESLINT for out project
+npx eslint --init
+
+// run periodically to check for style warrnings
+npx eslint .
 
 git init
 
