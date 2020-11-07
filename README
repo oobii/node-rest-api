@@ -6,6 +6,11 @@ npm install body-parser
 npm install nodemon
 npm install eslint
 
+// if we want to avoid mutation in const objects
+// we can install 
+// npm install eslint-plugin-immutable
+// add "plugin" section and add to the "rules" section
+
 // initializing ESLINT for out project
 npx eslint --init
 
