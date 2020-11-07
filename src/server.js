@@ -1,10 +1,22 @@
 import express from 'express';
 import { promises as fs} from 'fs';
-import {people} from "./people";
+import {people} from './people';
+import bodyParser from 'body-parser';
 
 // to run: npx babel-node src/server.js
 
 let app = express();
+// bodyParser is a plugin that takes data we supply and add it to the request
+// we will use Postman to supply our name to add in the body of the POST request
+// in the Postman use POST method, body, raw, JSON and provide new person data in the JSON format
+app.use(bodyParser.json());
+
+app.post('/people', (req, res) => {
+    let newPerson = req.body;
+    people.push(newPerson);
+    res.json(people);
+});
+
 
 app.get("/hello", (req, res) => {
     res.send("Hello there!");

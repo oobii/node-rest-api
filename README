@@ -2,6 +2,7 @@ cd node-rest-api
 npm init -y
 npm install express
 npm install @babel/core @babel/preset-env @babel/node
+npm install body-parser
 
 git init
 
